@@ -101,6 +101,9 @@ const volumeSlider = document.querySelector(".volume-slider");
 
 const queues = [...document.querySelectorAll('.queue')];
 
+// Initial Volume
+music.volume = 0.05;
+
 // Play and pause
 playBtn.addEventListener("click", () => {
     music.play();
