@@ -1,0 +1,7 @@
+.currentTime is web API
+ - Definition 
+ - Returns the current position of time of audio
+ - [Resource](https://www.geeksforgeeks.org/html-dom-video-currenttime-property/)
+ - (http://www.java2s.com/ref/javascript/javascript-dom-html-video-currenttime-property-set.html)
+
+Watch how to style the volumeSlider at 26:28.

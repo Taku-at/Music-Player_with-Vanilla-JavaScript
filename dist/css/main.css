@@ -170,11 +170,12 @@ img {
   top: -4px;
   height: 8px;
   background: var(--secondary-color);
+  cursor: hand;
   overflow: hidden;
 }
 .music-player-section .seek-bar-container .music-seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 10px;
+  width: 5px;
   height: 5px;
   background: var(--primary-color);
   cursor: pointer;
@@ -209,6 +210,11 @@ img {
 .music-player-section .controls .main i {
   padding: 10px;
   cursor: pointer;
+  margin: 0 5px;
+  display: none;
+}
+.music-player-section .controls .main i.active {
+  display: inline-block;
 }
 .music-player-section .controls .volume-slider {
   -webkit-appearance: none;
@@ -232,7 +238,7 @@ img {
 }
 .music-player-section .controls .volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 10px;
+  width: 5px;
   height: 40px;
   background: var(--primary-color);
   box-shadow: -200px 0 1px 200px var(--primary-color);
@@ -254,7 +260,8 @@ img {
   position: relative;
   display: block;
   border-radius: 50px;
-  margin: auto;
+  margin: 5px auto;
+  padding: 10px;
 }
 .music-player-section.active .current-song-name {
   font-size: 40px;
@@ -316,6 +323,9 @@ img {
   align-items: center;
   border-top: 2px solid var(--alpa-color);
 }
+.playlist .queue.active i {
+  display: block;
+}
 .playlist .queue__cover {
   width: 60px;
   height: 60px;
@@ -336,9 +346,6 @@ img {
   font-size: 30px;
   color: var(--primary-color);
   display: none;
-}
-.playlist .queue__cover i.active {
-  display: block;
 }
 .playlist .queue .name {
   font-size: 22px;

@@ -202,11 +202,12 @@ img {
       top: -4px;
       height: 8px;
       background: var(--secondary-color);
+      cursor: hand;
       overflow: hidden;
 
       &::-webkit-slider-thumb {
         -webkit-appearance: none;
-        width: 10px;
+        width: 5px;
         height: 5px;
         background: var(--primary-color);
         cursor: pointer;
@@ -246,12 +247,24 @@ img {
       }
     }
 
+    // .main {
+    //   i {
+    //     padding: 10px;
+    //     cursor: pointer;
+    //   }
+    // }
     .main {
-      i {
-        padding: 10px;
+        i {
+                   padding: 10px;
         cursor: pointer;
+          margin: 0 5px;
+          display: none;
+
+          &.active {
+            display: inline-block;
+          }
+        }
       }
-    }
 
     //  volume slider
     .volume-slider {
@@ -279,7 +292,7 @@ img {
 
       &::-webkit-slider-thumb {
         -webkit-appearance: none;
-        width: 10px;
+        width: 5px;
         height: 40px;
         background: var(--primary-color);
         box-shadow: -200px 0 1px 200px var(--primary-color);
@@ -307,7 +320,8 @@ img {
       position: relative;
       display: block;
       border-radius: 50px;
-      margin: auto;
+      margin: 5px auto;
+      padding: 10px;
     }
     .current-song-name {
       font-size: 40px;
@@ -376,6 +390,12 @@ img {
         align-items: center;
         border-top: 2px solid var(--alpa-color);
 
+        &.active {
+          i {
+            display: block;
+          }
+        }
+
         &__cover {
             width: 60px;
             height: 60px;
@@ -398,10 +418,6 @@ img {
                 font-size: 30px;
                 color: var(--primary-color);
                 display: none;
-
-                &.active {
-                    display: block;
-                }
             }
         }
 
