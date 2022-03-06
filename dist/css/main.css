@@ -139,10 +139,14 @@ img {
 .music-player-section.active .controls .main i.active {
   display: inline-block;
 }
+.music-player-section nav {
+  z-index: 999;
+}
 .music-player-section nav .icon {
   position: absolute;
   top: 60px;
   transform: scale(1.3);
+  cursor: pointer;
 }
 .music-player-section nav .back-btn {
   float: left;
